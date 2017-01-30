@@ -1,4 +1,5 @@
 #coding:utf8
+from baike_spider import url_manager html_downloader html_parser html_outputer
 
 class SpiderMain(object)
 	def __init__(self):
