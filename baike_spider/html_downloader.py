@@ -8,8 +8,13 @@ class HtmlDownloader(object):
 			return None
 			
 		response = request.urlopen(url)
-		
-		if response.getcode()!= 200:
+#		print(url)
+		a = response.getcode()
+		if a!= 200:
+			print(a)
 			return  None
-			
-		return  reponse.read()
+#		print('getcode ok!')
+		
+		html_cont = response.read()
+#		print(html_cont)
+		return  html_cont
